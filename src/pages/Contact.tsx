@@ -10,38 +10,38 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Kontakt & Termin | The Gentleman's Cut Berlin</title>
+        <title>Kontakt & Termin | The Friend’s Barber Shop Bielefeld</title>
         <meta 
           name="description" 
-          content="Kontaktieren Sie The Gentleman's Cut in Berlin. Vereinbaren Sie Ihren Termin über unseren Chatbot oder rufen Sie uns an. Mo-Fr 09-20 Uhr, Sa 10-18 Uhr." 
+          content="Kontaktieren Sie The Friend’s Barber Shop in Bielefeld. Vereinbaren Sie Ihren Termin über unseren Chatbot oder rufen Sie uns an. Mo-Fr 09-19 Uhr, Sa 09-17 Uhr." 
         />
         <link rel="canonical" href="https://gentlemanscut.de/kontakt" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Barbershop",
-            "@id": "https://example-barbershop.at/#barbershop",
-            "name": "Beispiel Barbershop Wien",
-            "url": "https://example-barbershop.at",
-            "logo": "https://example-barbershop.at/images/logo.png",
-            "image": "https://example-barbershop.at/images/shop.jpg",
-            "telephone": "+43 1 2345678",
+            "@id": "https://gentlemanscut.de/#barbershop",
+            "name": "The Friend’s Barber Shop",
+            "url": "https://gentlemanscut.de",
+            "logo": "https://gentlemanscut.de/images/logo.png",
+            "image": "https://gentlemanscut.de/images/shop.jpg",
+            "telephone": "+49 176 62918126",
             "priceRange": "€€",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Musterstraße 12",
-              "addressLocality": "Wien",
-              "postalCode": "1020",
-              "addressCountry": "AT"
+              "streetAddress": "August-Bebel-Straße 151",
+              "addressLocality": "Bielefeld",
+              "postalCode": "33602",
+              "addressCountry": "DE"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "48.2167",
-              "longitude": "16.3958"
+              "latitude": "52.0226",
+              "longitude": "8.5331"
             },
             "areaServed": {
               "@type": "AdministrativeArea",
-              "name": "Wien"
+              "name": "Bielefeld"
             },
             "openingHoursSpecification": [
               {
@@ -58,9 +58,9 @@ const Contact = () => {
               }
             ],
             "sameAs": [
-              "https://www.google.com/maps?cid=1234567890",
-              "https://www.instagram.com/beispielbarbershop",
-              "https://www.facebook.com/beispielbarbershop"
+              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19641.818176793724!2d8.53716533476561!3d52.020957239288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ba3dbdaa202901%3A0x5ec3f80bc6ba6e5!2sBarbershop%20Kopfkino!5e0!3m2!1sde!2sde!4v1771500621173!5m2!1sde!2sde",
+              "https://www.instagram.com/gentlemanscut",
+              "https://www.facebook.com/gentlemanscut"
             ]
           })}
         </script>
@@ -96,8 +96,7 @@ const Contact = () => {
         <section className="py-24 bg-charcoal">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-              {/* Reihenfolge für Desktop: Chatbot links, Kontakt rechts
-                  Reihenfolge für Mobile: Chatbot oben, Kontakt unten */}
+              {/* Chatbot Column */}
               <AnimateOnScroll animation="slide-left" className="order-1 lg:order-1">
                 <div className="bg-card border border-border rounded-sm p-8 md:p-10 h-fit">
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
@@ -138,10 +137,10 @@ const Contact = () => {
                       Oder rufen Sie uns direkt an:
                     </p>
                     <a 
-                      href="tel:015118311067" 
+                      href="tel:017662918126" 
                       className="block text-center text-primary font-semibold mt-2 hover:underline"
                     >
-                      015118311067
+                      017662918126
                     </a>
                   </div>
 
@@ -178,6 +177,7 @@ const Contact = () => {
                 </div>
               </AnimateOnScroll>
 
+              {/* Info Column */}
               <AnimateOnScroll animation="slide-right" className="order-2 lg:order-2">
                 <div className="space-y-8">
                   <h2 className="font-display text-3xl font-bold text-foreground mb-8">
@@ -192,8 +192,8 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Adresse</h3>
                         <p className="text-muted-foreground">
-                          Färberstraße 54<br />
-                          90402 Nürnberg
+                          August-Bebel-Straße 151<br />
+                          33602 Bielefeld
                         </p>
                       </div>
                     </div>
@@ -205,10 +205,10 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Telefon</h3>
                         <a 
-                          href="tel:015118311067" 
+                          href="tel:017662918126" 
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                          015118311067
+                          017662918126
                         </a>
                       </div>
                     </div>
@@ -223,7 +223,7 @@ const Contact = () => {
                           href="mailto:info@gentlemanscut.de" 
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                          info@mustershop.de
+                          info@gentlemanscut.de
                         </a>
                       </div>
                     </div>
@@ -235,8 +235,8 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Öffnungszeiten</h3>
                         <ul className="text-muted-foreground space-y-1 text-sm">
-                          <li>Mo - Fr: 10:00 - 20:00</li>
-                          <li>Samstag: 10:00 - 19:00</li>
+                          <li>Mo - Fr: 9:00 - 19:00</li>
+                          <li>Samstag: 9:00 - 17:00</li>
                           <li>Sonntag: Geschlossen</li>
                         </ul>
                       </div>
@@ -245,14 +245,14 @@ const Contact = () => {
 
                   <div className="aspect-video rounded-sm overflow-hidden border border-border mt-8">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593.935844488252!2d11.069183276892435!3d49.44792955903806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f57a835434d4d%3A0xfba938ebd99d6f67!2sTop%20Salon%20-%20N%C3%BCrnberg!5e0!3m2!1sde!2sde!4v1769779552025!5m2!1sde!2sde"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19641.818176793724!2d8.53716533476561!3d52.020957239288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ba3dbdaa202901%3A0x5ec3f80bc6ba6e5!2sBarbershop%20Kopfkino!5e0!3m2!1sde!2sde!4v1771500621173!5m2!1sde!2sde"
                       width="100%"
                       height="100%"
                       style={{ border: 0, filter: 'grayscale(100%) contrast(1.2)' }}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Standort The Gentleman's Cut"
+                      title="Standort The Friend’s Barber Shop"
                     />
                   </div>
                 </div>
@@ -268,7 +268,6 @@ const Contact = () => {
 };
 
 export default Contact;
-
 
 
 
